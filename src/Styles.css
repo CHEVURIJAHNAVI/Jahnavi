@@ -1,0 +1,106 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+   /* Dark Blue */
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo / Name */
+.logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #003366;
+  letter-spacing: 1px;
+}
+
+/* Navigation Links */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.25rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  color: #003366;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: #003366;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 4px;
+  width: 0%;
+  height: 2px;
+  background-color: #003366;
+  transition: width 0.3s ease;
+}
+
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+
+/* Material UI Button Inside Navbar */
+.nav-links .MuiButton-root {
+  font-weight: 500;
+  text-transform: none;
+  border-radius: 6px;
+  padding: 6px 16px;
+  background-color: #003366;
+  color: white;
+}
+
+.nav-links .MuiButton-root:hover {
+  background-color: #e3e3e3;
+}
+
+/* Page content container */
+.page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Headings */
+h1, h2, h3 {
+  color: #003366;
+}
+
+/* Responsive (Optional) */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+}

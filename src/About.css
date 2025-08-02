@@ -1,0 +1,39 @@
+/* About.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa; /* light background */
+  color: #333;
+}
+
+.MuiContainer-root {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease-in-out;
+}
+
+.MuiTypography-root strong {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.MuiDivider-root {
+  background-color: #1976d2;
+  height: 2px;
+  width: 60px;
+  margin: 0 auto 1.5rem auto;
+  border-radius: 4px;
+}
+
+
+.about-container {
+  max-width: 800px;
+  margin: 60px auto;
+  padding: 20px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+  border-radius: 8px;
+}

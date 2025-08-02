@@ -2,6 +2,7 @@
 //import reactLogo from './assets/react.svg'
 //import viteLogo from '/vite.svg'
 //import './App.css'
+import './Styles.css'
 
 import { Link, Route, Routes } from "react-router-dom"
 import About from "./About"
@@ -21,17 +22,17 @@ function App() {
          <nav className="navbar">
           <div className="logo">Jahnavi</div>
         <ul className="nav-links">
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-          <li><Link to="/projects">Projects</Link></li>
-          <li><a href="/Jahnavi/Jahnavi.pdf" style={{ textDecoration: 'none' }}>
+          <li><Link to="/Jahnavi/">Home</Link></li>
+          <li><Link to="/Jahnavi/about">About</Link></li>
+          <li><Link to="/Jahnavi/contact">Contact</Link></li>
+          <li><Link to="/Jahnavi/projects">Projects</Link></li>
+          <li><a href="/Jahnavi/Jahnavi.pdf" style={{ padding: '8px 16px', background: '#003366', color: 'white', borderRadius: '4px', textDecoration: 'none' }}>
   <Button variant="contained" color="primary">
     Download Resume
   </Button>
 </a></li>
-                     <li>
-  <Link to="/contact" style={{ padding: '8px 16px', background: '#1976d2', color: 'white', borderRadius: '4px', textDecoration: 'none' }}>
+      <li>
+  <Link to="/Jahnavi/contact" style={{ padding: '8px 16px', background: '#003366', color: 'white', borderRadius: '4px', textDecoration: 'none' }}>
     Contact
   </Link>
 </li>
@@ -39,12 +40,12 @@ function App() {
          </nav>
 
         <Routes>
-        <Route path="/" element={<Home />} exact />
-        <Route path="/about" element={<About />} exact />
-        <Route path="/contact" element={<Contact />} exact />
-        <Route path="/projects" element={<Projects />} exact />
+        <Route path="/Jahnavi/" element={<Home />} exact />
+        <Route path="/Jahnavi/about" element={<About />} exact />
+        <Route path="/Jahnavi/contact" element={<Contact />} exact />
+        <Route path="/Jahnavi/projects" element={<Projects />} exact />
         
-        <Route path="*" element={<NotFound />} exact />
+        <Route path="/Jahnavi/*" element={<NotFound />} exact />
       </Routes>
       </div>
     </>
